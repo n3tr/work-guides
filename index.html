@@ -1,78 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <title>Work-guides by n3tr</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Work-guides by n3tr</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
+    <div class="wrapper">
+      <header>
         <h1>Work-guides</h1>
-        <h2></h2>
-        <a href="https://github.com/n3tr/work-guides" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+        <p></p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
+        <p class="view"><a href="https://github.com/n3tr/work-guides">View the Project on GitHub <small>n3tr/work-guides</small></a></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+        <ul>
+          <li><a href="https://github.com/n3tr/work-guides/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/n3tr/work-guides/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/n3tr/work-guides">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>iOSDealFishMobile</h1>
+
+<p>A guide for getting things done, maintain the project, create the feature.</p>
+
+<p>Guides</p>
+
+<h2>Recommendations</h2>
+
+<ul>
+<li>Keep Xcode stay up-to-date.</li>
+<li>Install Xcode command line tools.</li>
+<li>Install Ruby via Rbevn or RVM.</li>
+<li>Install HomeBrew for Mac.</li>
+<li>Try to use command line if you conformable.</li>
+</ul><p>Code stegies </p>
+
+<h4>Avoid to fork the repo.</h4>
+
+<ul>
+<li>all issues to be posted only on main repo (this repo)</li>
+<li>to make a feature branch easy to test by swtich/checkout the feature branch</li>
+<li>easy to keep feature up-to-date with master.</li>
+</ul><h4>Avoid to code on branch which posted as pull request if:</h4>
+
+<ul>
+<li>You not own the branch.</li>
+<li>The branch not shared to you.</li>
+<li>Code note relate to.</li>
+</ul><h2>Write a feature, bug fixes.</h2>
+
+<p>Keep master branch up-to-date</p>
+
+<p>Create a local branch based off master </p>
+
+<p>Using Terminal:</p>
+
+<pre><code>// 1. Checkout master
+git checkout master
+// 2. Keep master up-to-date
+git pull
+// 3. create a branch and switch to the branch
+git checkout -b &lt;branch-name&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Using Github for Mac</p>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/n3tr/work-guides/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/n3tr/work-guides/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/n3tr/work-guides"></a> is maintained by <a href="https://github.com/n3tr">n3tr</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<ol>
+<li>Goto Branch tab.</li>
+<li>Double-click on master</li>
+<li>Sync branch</li>
+<li>Click '+' to create branch based off master</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/n3tr">n3tr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-  
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
