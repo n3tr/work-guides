@@ -1,38 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Work-guides by n3tr</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Work-guides : " />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Work-guides</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Work-guides</h1>
-        <p></p>
 
-        <p class="view"><a href="https://github.com/n3tr/work-guides">View the Project on GitHub <small>n3tr/work-guides</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/n3tr/work-guides">View on GitHub</a>
 
+          <h1 id="project_title">Work-guides</h1>
+          <h2 id="project_tagline"></h2>
 
-        <ul>
-          <li><a href="https://github.com/n3tr/work-guides/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/n3tr/work-guides/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/n3tr/work-guides">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>iOSDealFishMobile</h1>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/n3tr/work-guides/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/n3tr/work-guides/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<p>A guide for getting things done, maintain the project, create the feature.</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Guides</h1>
 
-<p>Guides</p>
+<p>A guide for getting things done, maintaining the project, create a feature.</p>
 
 <h2>Recommendations</h2>
 
@@ -42,37 +43,37 @@
 <li>Install Ruby via Rbevn or RVM.</li>
 <li>Install HomeBrew for Mac.</li>
 <li>Try to use command line if you conformable.</li>
-</ul><p>Code stegies </p>
-
-<h4>Avoid to fork the repo.</h4>
+</ul><h4>Avoid to fork the repo.</h4>
 
 <ul>
-<li>all issues to be posted only on main repo (this repo)</li>
-<li>to make a feature branch easy to test by swtich/checkout the feature branch</li>
-<li>easy to keep feature up-to-date with master.</li>
-</ul><h4>Avoid to code on branch which posted as pull request if:</h4>
+<li>All issues to be posted only on main repo (this repo)</li>
+<li>Push a feature branch is easy to testing by checkout.</li>
+<li>Easy to keep feature branch up-to-date with master.</li>
+</ul><h2>Git strategies</h2>
+
+<p>Keeping a simple process</p>
 
 <ul>
-<li>You not own the branch.</li>
-<li>The branch not shared to you.</li>
-<li>Code note relate to.</li>
-</ul><h2>Write a feature, bug fixes.</h2>
+<li>Create branch based off master.</li>
+<li>Hack on the branch, do a great stuff.</li>
+<li>Push whenever, let other help.</li>
+<li>Pull request for review and test.</li>
+<li>Merge back to master. (let click merge button if available)</li>
+</ul><h2>Write a feature, bug fix.</h2>
 
-<p>Keep master branch up-to-date</p>
+<p>Keeping master branch up-to-date and create a local branch based off master.</p>
 
-<p>Create a local branch based off master </p>
+<p><strong>Using Terminal:</strong></p>
 
-<p>Using Terminal:</p>
+<div class="highlight"><pre>    <span class="c"># 1. Checkout master</span>
+    git checkout master
+    <span class="c"># 2. Keep master up-to-date</span>
+    git pull
+    <span class="c"># 3. create a branch and switch to the branch</span>
+    git checkout -b &lt;branch-name&gt;
+</pre></div>
 
-<pre><code>// 1. Checkout master
-git checkout master
-// 2. Keep master up-to-date
-git pull
-// 3. create a branch and switch to the branch
-git checkout -b &lt;branch-name&gt;
-</code></pre>
-
-<p>Using Github for Mac</p>
+<p><strong>Using Github for Mac</strong> </p>
 
 <ol>
 <li>Goto Branch tab.</li>
@@ -81,12 +82,17 @@ git checkout -b &lt;branch-name&gt;
 <li>Click '+' to create branch based off master</li>
 </ol>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/n3tr">n3tr</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Work-guides maintained by <a href="https://github.com/n3tr">n3tr</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
